@@ -1,50 +1,108 @@
-      body {
-            font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            margin: 0;
-            color: #333;
-        }
+    :root {
+      --bg-color: #f4f9ff;
+      --primary-color: #ffffff;
+      --accent-color: #4a90e2;
+      --text-color: #333;
+      --link-hover: #2a72c7;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+    }
 
-        header {
-            background-color: #3c8dbc;
-            padding: 20px 40px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    header, footer {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px var(--card-shadow);
+    }
 
-        .content {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-        h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+    nav h1 {
+      font-size: 24px;
+      color: var(--accent-color);
+    }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
 
-        footer {
-            background-color: #3c8dbc;
-            text-align: center;
-            color: white;
-            padding: 20px;
-            margin-top: 60px;
-        }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--link-hover);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+      background: var(--primary-color);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px var(--card-shadow);
+      margin-top: 40px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      text-align: center;
+      color: #888;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }

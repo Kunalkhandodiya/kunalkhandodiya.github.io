@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunal Khandodiya - Portfolio</title>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="CSS/index.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KunalKhandodiya</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Kunal Khandodiya</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <h1>Kunal Khandodiya</h1>
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contacts.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="intro">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I am a Data Scientist and Software Developer with experience in building intelligent, efficient, and scalable solutions. Explore my work below.</p>
+  </div>
 
-    <div class="intro">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am a passionate developer focused on building efficient and elegant software solutions. Explore my work below.</p>
+  <section id="projects" class="section">
+    <h3>My Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>Rent Management System</h4>
+        <p>A Django-based system for managing tenants, rent, and generating invoices automatically.</p>
+      </div>
+      <div class="project">
+        <h4>Portfolio Website</h4>
+        <p>A responsive and modern portfolio to showcase my projects and skills.</p>
+      </div>
+      <div class="project">
+        <h4>Data Analyzer</h4>
+        <p>Python tool to clean, visualize, and summarize large CSV datasets.</p>
+      </div>
     </div>
+  </section>
 
-    <section id="about" class="section">
-        <h3>About Me</h3>
-        <p style="text-align:center; max-width:700px; margin:auto;">
-            Hi! I'm Kunal, a Data Scientist and Software Developer with experience in web development, Python, machine learning, and Django. I enjoy solving real-world problems through code and am always looking to learn more.
-        </p>
-    </section>
+  <section class="section">
+    <h3>Qualifications & Skills</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: auto;">
+      
+      <!-- Left Column -->
+      <div style="background: #f9fbff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 12px var(--card-shadow); border: 1px solid #e0e0e0;">
+        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Qualifications</h4>
+        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
+          <li>B.Tech in Computer Science - XYZ University</li>
+          <li>12th - CBSE (PCM)</li>
+          <li>10th - CBSE</li>
+        </ul>
 
-    <section id="projects" class="section">
-        <h3>My Projects</h3>
-        <div class="projects">
-            <div class="project">
-                <h4>Rent Management System</h4>
-                <p>A Django-based system for managing tenants, rent, and generating invoices automatically.</p>
-            </div>
-            <div class="project">
-                <h4>Portfolio Website</h4>
-                <p>A responsive and modern portfolio to showcase my projects and skills.</p>
-            </div>
-            <div class="project">
-                <h4>Data Analyzer</h4>
-                <p>Python tool to clean, visualize, and summarize large CSV datasets.</p>
-            </div>
-        </div>
-    </section>
+        <h4 style="color: var(--accent-color); margin-top: 20px; margin-bottom: 10px;">Skills</h4>
+        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
+          <li>Python, Django, Flask</li>
+          <li>Machine Learning, Data Analysis</li>
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>SQL, Git & GitHub</li>
+        </ul>
+      </div>
 
-    <section id="contact" class="section">
-        <h3>Contact</h3>
-        <div class="social-icons">
-            <a href="mailto:kunalkhandodiya@gmail.com" title="Email"  ><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/kunalkhandodiya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/kunal" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
+      <!-- Right Column -->
+      <div style="background: #f9fbff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 12px var(--card-shadow); border: 1px solid #e0e0e0;">
+        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Certifications</h4>
+        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
+          <li>Python for Data Science – IBM</li>
+          <li>Machine Learning – Stanford (Coursera)</li>
+          <li>Full Stack Web Development – ABC Institute</li>
+          <li>Git & GitHub Essentials – Udemy</li>
+        </ul>
+      </div>
 
-    <footer class="footer">
-        &copy; 2025 Kunal Khandodiya. All rights reserved.
-    </footer>
+    </div>
+  </section>
 
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    
+    <div class="social-icons">
+      <a href="mailto:kunalkhandodiya@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/kunalkhandodiya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/kunal-kumar-135450182" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kunal Khandodiya. All rights reserved.
+  </footer>
 </body>
 </html>
