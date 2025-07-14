@@ -1,123 +1,124 @@
-    :root {
-      --bg-color: #f4f9ff;
-      --primary-color: #ffffff;
-      --accent-color: #4a90e2;
-      --text-color: #333;
-      --link-hover: #2a72c7;
-      --card-shadow: rgba(0, 0, 0, 0.1);
-    }
-
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
     }
 
-    header, footer {
-      background-color: var(--primary-color);
-      color: var(--text-color);
-      padding: 20px 40px;
-      box-shadow: 0 2px 6px var(--card-shadow);
+    header {
+      background: #1e293b;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     nav {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
     }
 
-    nav h1 {
-      font-size: 24px;
-      color: var(--accent-color);
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #38bdf8;
     }
 
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
 
     .nav-links a {
       text-decoration: none;
-      color: var(--text-color);
-      font-weight: bold;
-      transition: color 0.3s;
+      color: #f1f5f9;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
     .nav-links a:hover {
-      color: var(--link-hover);
+      color: #38bdf8;
     }
 
     h2 {
       text-align: center;
-      color: var(--accent-color);
-      margin-top: 40px;
+      margin: 40px 0 20px;
       font-size: 32px;
+      color: #38bdf8;
     }
 
     .projects {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
       display: grid;
-      gap: 24px;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .project {
-      background-color: var(--primary-color);
-      padding: 24px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-left: 4px solid #38bdf8;
       border-radius: 12px;
-      box-shadow: 0 6px 12px var(--card-shadow);
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      padding: 20px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.1);
     }
 
     .project:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+      border-left-color: #0ea5e9;
+      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
     }
 
     .project h3 {
+      color: #e2e8f0;
       margin-bottom: 10px;
-      color: var(--link-hover);
     }
 
     .project p {
-      color: #555;
-      font-size: 16px;
-      line-height: 1.5;
+      color: #cbd5e1;
+      font-size: 15px;
+      line-height: 1.6;
     }
 
     footer {
-      background-color: var(--primary-color);
       text-align: center;
-      color: #888;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid #eee;
+      padding: 30px 10px 20px;
+      background: #1e293b;
+      color: #94a3b8;
+      margin-top: 60px;
     }
 
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    .social-icons {
+      margin: 20px 0 10px;
+    }
 
-      .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-      }
+    .social-icons a {
+      margin: 0 15px;
+      font-size: 26px;
+      color: #38bdf8;
+      transition: 0.3s;
+      animation: float 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
 
-      h2 {
-        font-size: 26px;
-      }
+    .social-icons a:hover {
+      color: #0ea5e9;
+      transform: scale(1.1);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+      100% { transform: translateY(0); }
     }

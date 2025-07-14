@@ -6,137 +6,8 @@
   <title>Kunal Khandodiya</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    /* Reset & Theme */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
-    }
-
-    header {
-      background: #1e293b;
-      padding: 20px 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 600;
-      color: #38bdf8;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #f1f5f9;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #38bdf8;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: #38bdf8;
-    }
-
-    .cards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-left: 4px solid #38bdf8;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      border-left: 4px solid #0ea5e9;
-      box-shadow: 0 8px 30px rgba(14, 165, 233, 0.2);
-    }
-
-    .card h4 {
-      font-size: 16px;
-      color: #e2e8f0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e293b;
-      color: #94a3b8;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 480px) {
-      h2 {
-        font-size: 24px;
-        
-    .intro {
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-      padding: 80px 20px;
-      text-align: center;
-      color: #e2e8f0;
-}
-
-.intro h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #38bdf8;
-}
-
-.intro p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-.intro .highlight {
-  color: #0ea5e9;
-  font-weight: 600;
-}
-
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="CSS/index.css"
+ 
 </head>
 <body>
 
@@ -149,16 +20,16 @@
       </ul>
     </nav>
   </header>
-  <div class="intro">
-  <h2>Welcome to My Portfolio</h2>
-  <p>
-    I am a <span class="highlight">Data Scientist</span> and <span class="highlight">Software Developer</span>
-    with experience in building <span class="highlight">intelligent</span>, 
-    <span class="highlight">efficient</span>, and <span class="highlight">scalable</span> solutions.
-    Explore my work below.
-  </p>
-</div>
 
+  <div class="intro">
+    <h2>Welcome to My Portfolio</h2>
+    <p>
+      I am a <span class="highlight">Data Scientist</span> and <span class="highlight">Software Developer</span>
+      with experience in building <span class="highlight">intelligent</span>,
+      <span class="highlight">efficient</span>, and <span class="highlight">scalable</span> solutions.
+      Explore my work below.
+    </p>
+  </div>
 
   <!-- Qualifications -->
   <section class="section">
@@ -168,11 +39,28 @@
       <div class="card"><h4>BCA - Bachelor of Computer Applications (MDU)</h4></div>
     </div>
   </section>
+  
+  <!-- Cetfications -->
+  <section class="section">
+    <h2>Certifications</h2>
+    <div class="cards-container">
+      <div class="card"><h4>Google Cloud Certified Associate Cloud Engineer</h4></div>
+      <div class="card"><h4>Machine Learning for All - University of London</h4></div>
+      <div class="card"><h4>Machine Learning - Simplilearn</h4></div>
+      <div class="card"><h4>Data Science with Python - Simplilearn</h4></div>
+      <div class="card"><h4>Git & GitHub Essentials – Udemy</h4></div>
+	  <div class="card"><h4>Databases and SQL for Data Science with Python - Coursera</h4></div>
+	  <div class="card"><h4>Java Certification Course</h4> </div>
+	  <div class="card"><h4>Learn Coding A to Z, Web Design - HTML,CSS and JavaScript</h4> </div>
+	  
+    </div>
+  </section>
+  
 
   <!-- Skills -->
   <section class="section">
     <h2>Skills</h2>
-    <div class="cards-container">
+    <div class="cards-container scroll-x">
       <div class="card"><h4>Java</h4></div>
       <div class="card"><h4>Python</h4></div>
       <div class="card"><h4>Django</h4></div>
@@ -198,22 +86,84 @@
       <div class="card"><h4>Google Cloud Platform</h4></div>
     </div>
   </section>
-
-  <!-- Certifications -->
-  <section class="section">
-    <h2>Certifications</h2>
-    <div class="cards-container">
-      <div class="card"><h4>Google Cloud Certified Associate Cloud Engineer</h4></div>
-      <div class="card"><h4>Machine Learning for All - University of London</h4></div>
-      <div class="card"><h4>Machine Learning - Simplilearn</h4></div>
-      <div class="card"><h4>Data Science with Python - Simplilearn</h4></div>
-      <div class="card"><h4>Git & GitHub Essentials – Udemy</h4></div>
+  
+<!-- Experience -->
+<!-- Experience -->
+<section class="section" id="experience">
+  <h2>Experience</h2>
+  <div class="cards-container" style="flex-direction: column; align-items: center;">
+    
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>AI Tutor</strong> – Online Instructor • Remote • Dec 2024</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Provided AI/ML tutoring to students from beginner to advanced levels.</li>
+        <li>Created structured learning modules and real-world project tasks.</li>
+      </ul>
     </div>
-  </section>
 
-  <footer>
-    &copy; 2025 Kunal Khandodiya. All rights reserved.
-  </footer>
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>Data Analyst</strong> – Unicloud Lab Pvt. Ltd. • Dec 2023 – Dec 2024</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Developed end-to-end machine learning pipelines for client projects.</li>
+        <li>Built dynamic dashboards using Power BI for actionable insights.</li>
+        <li>Used AWS, GCP, Django, and Git for collaborative model deployment.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>Data Analyst Intern</strong> – Unicloud Lab Pvt. Ltd. • Jul 2023 – Dec 2023</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Assisted in preprocessing and training ML/NLP/CV models.</li>
+        <li>Evaluated model performance and optimized cloud resource usage.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>AI Research Intern</strong> – Fresko Innovation Labs Pvt. Ltd. • Feb 2023 – Jul 2023</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Conducted experimental research on ML algorithms and statistical modeling.</li>
+        <li>Created internal tools for model visualization and experimentation.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>Data Science Intern</strong> – The Sparks Foundation • Jan 2023 – Feb 2023</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Completed structured tasks in regression, classification, and clustering.</li>
+        <li>Worked with Python, NumPy, Pandas, and visualization libraries.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="width: 100%; max-width: 900px;">
+      <h4><strong>Founder & President</strong> – FullstackStallClub • Mar 2021 – Jan 2023</h4>
+      <ul style="padding-left: 20px; margin-top: 10px; color: #cbd5e1;">
+        <li>Founded a student-led club focused on AI/ML learning and collaboration.</li>
+        <li>Organized 15+ coding sessions, tech talks, and student-led mini projects.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Contact Icons -->
+<div style="text-align: center; margin-top: 40px;">
+  <a href="mailto:kunalkhandodiya@gmail.com" style="color: #38bdf8; margin: 0 15px; font-size: 24px;" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://github.com/kunalkhandodiya" target="_blank" style="color: #38bdf8; margin: 0 15px; font-size: 24px;" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/kunal-kumar-135450182" target="_blank" style="color: #38bdf8; margin: 0 15px; font-size: 24px;" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+<footer>
+  &copy; 2025 Kunal Khandodiya. All rights reserved.
+</footer>
 
 </body>
 </html>
