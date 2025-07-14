@@ -3,9 +3,145 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KunalKhandodiya</title>
+  <title>Kunal Khandodiya</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="CSS/index.css">
+  <style>
+    /* Inline CSS for demo or add to CSS/index.css */
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    header {
+      background: #0d47a1;
+      padding: 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #e3f2fd;
+    }
+
+    .intro h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #333;
+    }
+
+    .section {
+      padding: 60px 20px;
+      background: #f4f6f8;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .cards-container {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+      padding: 25px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      color: #444;
+      line-height: 1.7;
+      list-style-type: disc;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: #0d47a1;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #1565c0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d47a1;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,7 +150,6 @@
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        
       </ul>
     </nav>
   </header>
@@ -24,7 +159,7 @@
     <p>I am a Data Scientist and Software Developer with experience in building intelligent, efficient, and scalable solutions. Explore my work below.</p>
   </div>
 
-  <section id="projects" class="section">
+  <section class="section">
     <h3>My Projects</h3>
     <div class="projects">
       <div class="project">
@@ -43,41 +178,41 @@
   </section>
 
   <section class="section">
-    <h3>Qualifications & Skills</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: auto;">
-      
-      <!-- Left Column -->
-      <div style="background: #f9fbff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 12px var(--card-shadow); border: 1px solid #e0e0e0;">
-        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Qualifications</h4>
-        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
-          <li>MCA-Master of Computer Applications from (MDU)</li>
-          <li>BCA-Bachelor of Computer Applications from (MDU)</li>
-
+    <h3>Qualifications, Skills & Certifications</h3>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <h4>Qualifications</h4>
+        <ul>
+          <li>MCA - Master of Computer Applications (MDU)</li>
+          <li>BCA - Bachelor of Computer Applications (MDU)</li>
         </ul>
+      </div>
 
-        <h4 style="color: var(--accent-color); margin-top: 20px; margin-bottom: 10px;">Skills</h4>
-        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
-          <li>Java, Python, Django, Rest-API</li>
-          <li>Machine Learning, Data Analysis, Deep Learning, NLP, Computer Vision</li>
-          <li>Scikit-Learn, TensorFlow, Pytorch, GAN, ANN , RNN, LSTM</li>
+      <!-- Card 2 -->
+      <div class="card">
+        <h4>Skills</h4>
+        <ul>
+          <li>Java, Python, Django, REST API</li>
+          <li>Machine Learning, Deep Learning, NLP</li>
+          <li>TensorFlow, PyTorch, Scikit-Learn</li>
           <li>HTML, CSS, JavaScript</li>
-          <li>MYSQL, Git & GitHub</li>
+          <li>MySQL, Git & GitHub</li>
           <li>AWS, Google Cloud Platform</li>
         </ul>
       </div>
 
-      <!-- Right Column -->
-      <div style="background: #f9fbff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 12px var(--card-shadow); border: 1px solid #e0e0e0;">
-        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Certifications</h4>
-        <ul style="color: #555; padding-left: 20px; line-height: 1.8;">
+      <!-- Card 3 -->
+      <div class="card">
+        <h4>Certifications</h4>
+        <ul>
           <li>Google Cloud Certified Associate Cloud Engineer</li>
-          <li>Machine Learning for all from University of London</li>
-          <li>Machine Learning from Simplilearn</li>
-          <li>Data Science with Python from Simplilearn</li>
+          <li>Machine Learning for All - University of London</li>
+          <li>Machine Learning - Simplilearn</li>
+          <li>Data Science with Python - Simplilearn</li>
           <li>Git & GitHub Essentials – Udemy</li>
         </ul>
       </div>
-
     </div>
   </section>
 
